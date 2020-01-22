@@ -1,0 +1,1228 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://fathonir.github.io/ontologi-akreditasi#"
+     xml:base="https://fathonir.github.io/ontologi-akreditasi"
+     xmlns:oa="https://fathonir.github.io/ontologi-akreditasi#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://fathonir.github.io/ontologi-akreditasi">
+        <owl:versionIRI rdf:resource="https://fathonir.github.io/ontologi-akreditasi/0.1"/>
+        <rdfs:comment>Ontologi Akreditasi Perguruan Tinggi yang digunakan untuk Instrumen Akreditasi Perguruan Tinggi 3.0. Ontologi ini dibangun hasil dari tesis Mokhammad Fathoni Rokhman yang berjudul PENDEKATAN GOAL-ORIENTED REQUIREMENTS ENGINEERING SEBAGAI MODIFIKASI METODE PENGEMBANGAN ONTOLOGI PADA DOMAIN AKREDITASI PERGURUAN TINGGI.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://fathonir.github.io/ontologi-akreditasi"/>
+        <rdfs:label>Ontologi Akreditasi Perguruan Tinggi</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#departemen -->
+
+    <owl:ObjectProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#departemen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Departemen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#fakultas -->
+
+    <owl:ObjectProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#fakultas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Fakultas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jurusan -->
+
+    <owl:ObjectProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jurusan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Jurusan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#mahasiswa -->
+
+    <owl:ObjectProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#mahasiswa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Mahasiswa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#programStudi -->
+
+    <owl:ObjectProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#programStudi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProgramStudi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#analisisCapaianKinerja -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#analisisCapaianKinerja">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#AnalisisDanPenetapanProgramPengembangan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#analisisSWOT -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#analisisSWOT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#AnalisisDanPenetapanProgramPengembangan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekAliansi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekAliansi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekBudaya -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekBudaya">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekEkonomi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekEkonomi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekEksternalLain -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekEksternalLain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekElearning -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekElearning">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekIptek -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekIptek">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekKebijakan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekKebijakan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekKebutuhanDudiDanMasyarakat -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekKebutuhanDudiDanMasyarakat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekMitra -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekMitra">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekOCW -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekOCW">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekPendidikanJarakJauh -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekPendidikanJarakJauh">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekPenggunaLulusan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekPenggunaLulusan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekPerkembangan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekPerkembangan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekPesaing -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekPesaing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekPolitik -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekPolitik">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekSosial -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekSosial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekSumberCalonDosen -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekSumberCalonDosen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekSumberCalonMahasiswa -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekSumberCalonMahasiswa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#aspekSumberTenagaKependidikan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#aspekSumberTenagaKependidikan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#bekerjaTingkatLokal -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#bekerjaTingkatLokal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#bekerjaTingkatMultinasional -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#bekerjaTingkatMultinasional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#bekerjaTingkatNasional -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#bekerjaTingkatNasional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#dayaTampung -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#dayaTampung">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#dosenDanTenagaKependidikan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#dosenDanTenagaKependidikan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#evaluasiCapaianKinerja -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#evaluasiCapaianKinerja">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#indikatorKinerjaTambahan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#indikatorKinerjaTambahan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#indikatorKinerjaUtama -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#indikatorKinerjaUtama">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jabatanAkademik -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jabatanAkademik">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Dosen"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jenisPenggunaan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jenisPenggunaan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#PenggunaanDana"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jenisProdi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jenisProdi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jenisPublikasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jenisPublikasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Publikasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jenisSertifikasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jenisSertifikasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jenisSumberDana -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jenisSumberDana">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#SumberDana"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jenjangPendidikan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jenjangPendidikan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#judul -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#judul">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahDana -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahDana">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahDinilaiPengguna -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahDinilaiPengguna">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahDisitasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahDisitasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Publikasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahDosen -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahDosen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahLulusan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahLulusan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswa -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaAktif -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaAktif">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaAsing -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaAsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaBaru -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaBaru">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaBaruTransfer -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaBaruTransfer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaTA -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaTA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaTransfer -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMahasiswaTransfer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahMenjawabTracer -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahMenjawabTracer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahPendaftar -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahPendaftar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#jumlahPendaftarLulusSeleksi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#jumlahPendaftarLulusSeleksi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#kebijakan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#kebijakan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#kepuasanPengguna -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#kepuasanPengguna">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#kesimpulanEvaluasiTindakLanjut -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#kesimpulanEvaluasiTindakLanjut">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#keterangan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#keterangan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#keuanganSaranaDanPrasarana -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#keuanganSaranaDanPrasarana">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#kinerjaInstitusi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#kinerjaInstitusi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#latarBelakang -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#latarBelakang">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#lembagaAkreditasiInternasional -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#lembagaAkreditasiInternasional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#lembagaAuditEksternal -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#lembagaAuditEksternal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#lembagaSertifikasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#lembagaSertifikasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#lingkupSertifikasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#lingkupSertifikasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#mahasiswaDanLulusan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#mahasiswaDanLulusan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#masaBerlaku -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#masaBerlaku">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#masaTunggu -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#masaTunggu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#nama -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#nama">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#opiniAuditEksternal -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#opiniAuditEksternal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#organisasiDanTataKerja -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#organisasiDanTataKerja">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#pendidikanTertinggi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#pendidikanTertinggi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Dosen"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#penjaminanMutu -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#penjaminanMutu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#persenBidangKerjaSesuai -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#persenBidangKerjaSesuai">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#prestasiDicapai -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#prestasiDicapai">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#prestasiDosen -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#prestasiDosen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Dosen"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#programKeberlanjutan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#programKeberlanjutan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#AnalisisDanPenetapanProgramPengembangan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#programPendidikan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#programPendidikan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProgramStudi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#rataIPK -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#rataIPK">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#rataMasaStudi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#rataMasaStudi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#sejarahInstitusi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#sejarahInstitusi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#sertifikasiDosen -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#sertifikasiDosen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Dosen"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#sistemPenjaminanMutu -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#sistemPenjaminanMutu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#statusAkreditasiInternasional -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#statusAkreditasiInternasional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#statusAkreditasiProdi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#statusAkreditasiProdi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#statusDosen -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#statusDosen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Dosen"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#strategiPencapaian -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#strategiPencapaian">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#strategiPengembangan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#strategiPengembangan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#AnalisisDanPenetapanProgramPengembangan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#sudahBekerja -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#sudahBekerja">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#sumberPembiayaan -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#sumberPembiayaan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#tahun -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#tahun">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#tingkatPrestasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#tingkatPrestasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#tingkatSertifikasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#tingkatSertifikasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#vmtsDanTataNilai -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#vmtsDanTataNilai">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#waktuPrestasi -->
+
+    <owl:DatatypeProperty rdf:about="https://fathonir.github.io/ontologi-akreditasi#waktuPrestasi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#AkreditasiInternasionalPS -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#AkreditasiInternasionalPS"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#AnalisisDanPenetapanProgramPengembangan -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#AnalisisDanPenetapanProgramPengembangan"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#AuditEksternalKeuangan -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#AuditEksternalKeuangan"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Departemen -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Departemen">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Dosen -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Dosen"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Fakultas -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Fakultas">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Jurusan -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Jurusan">
+        <owl:equivalentClass rdf:resource="https://fathonir.github.io/ontologi-akreditasi#ProgramStudi"/>
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Kerjasama -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Kerjasama"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KerjasamaPendidikan -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KerjasamaPendidikan">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Kerjasama"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KerjasamaPenelitian -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KerjasamaPenelitian">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Kerjasama"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KerjasamaPkM -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KerjasamaPkM">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Kerjasama"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalInternasional -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalInternasional">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalLokal -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalLokal">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalNasional -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalNasional">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaKeuanganSaranaPrasarana -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaKeuanganSaranaPrasarana">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaLuaranDanCapaian -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaLuaranDanCapaian">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaMahasiswa -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaMahasiswa">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaPendidikan -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaPendidikan">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaPenelitian -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaPenelitian">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaPkM -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaPkM">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaSDM -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaSDM">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaTataPamongTataKelolaKerjasama -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaTataPamongTataKelolaKerjasama">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#KriteriaVMTS -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaVMTS">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#KriteriaAkreditasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Lulusan -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Lulusan"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Mahasiswa -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Mahasiswa"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Penelitian -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Penelitian"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#PengabdianKepadaMasyarakat -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#PengabdianKepadaMasyarakat"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#PenggunaanDana -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#PenggunaanDana"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Prestasi -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Prestasi"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#PrestasiAkademik -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#PrestasiAkademik">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Prestasi"/>
+        <owl:disjointWith rdf:resource="https://fathonir.github.io/ontologi-akreditasi#PrestasiNonAkademik"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#PrestasiNonAkademik -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#PrestasiNonAkademik">
+        <rdfs:subClassOf rdf:resource="https://fathonir.github.io/ontologi-akreditasi#Prestasi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#ProfilInstitusi"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#ProgramStudi -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#ProgramStudi"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#Publikasi -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#Publikasi"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#SertifikasiEksternal -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#SertifikasiEksternal"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#SumberDana -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#SumberDana"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#TahunAkademik -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#TahunAkademik"/>
+    
+
+
+    <!-- https://fathonir.github.io/ontologi-akreditasi#UnitPengelola -->
+
+    <owl:Class rdf:about="https://fathonir.github.io/ontologi-akreditasi#UnitPengelola"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#Departemen"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#Fakultas"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#Jurusan"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalInternasional"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalLokal"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KondisiEksternalNasional"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaKeuanganSaranaPrasarana"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaLuaranDanCapaian"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaMahasiswa"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaPendidikan"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaPenelitian"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaPkM"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaSDM"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaTataPamongTataKelolaKerjasama"/>
+            <rdf:Description rdf:about="https://fathonir.github.io/ontologi-akreditasi#KriteriaVMTS"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
